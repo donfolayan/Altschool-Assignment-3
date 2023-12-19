@@ -157,12 +157,24 @@ input::placeholder {
     margin: 0;
   }
 
+  .logo{
+    width: 38.67px;
+  }
+
+  .heading{
+    font-size: 30px;
+    line-height: 29.4px;
+    letter-spacing: -0.8px;
+  }
+
   .desktop{
     display: hidden;
   }
 
   .mobile{
     font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
     color: var(--placeholder-color)
   }
 
