@@ -1,0 +1,149 @@
+@font-face {
+  font-family: SofiaPro;
+  src: url(./Assets/font/SofiaProExtraLight.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: SofiaPro;
+  src: url(./Assets/font/SofiaProLight.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SofiaPro;
+  src: url(./Assets/font/SofiaProSemiBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: SofiaPro, inter, Helvetica, sans-serif;
+  box-sizing: border-box;
+  border-style: none;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+:root {
+  --main-background-color: #f7fdfc;
+  --form-input-border: #f0f0f0;
+  --placeholder-color: #737373;
+  --register-background-color: #2ec4b6;
+}
+
+body {
+  background-color: var(--main-background-color);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  width: 100vw;
+  margin: 81px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+section.left {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  font-family: inter, Helvetica, sans-serif;
+}
+
+section.right {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 4px 50px 0px #0408131a;
+}
+
+.logo {
+  width: 77.33px;
+  padding-bottom: 50px;
+}
+
+.heading {
+  font-family: inter, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.8px;
+  padding-bottom: 20px;
+}
+
+.desktop {
+  font-family: inter, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.mobile {
+  display: none;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.input-line {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+input[type="text"],
+select#gender,
+input[type="date"],
+input[type="password"] {
+  width: 100%;
+  display: flex;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: transparent;
+  border: 1px solid var(--form-input-border);
+  padding: 14px 16px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+input[type="date"]:before {
+  color: lightgrey !important;
+  content: attr(placeholder) !important;
+  margin-right: 0.5em;
+}
+
+input[type="submit"] {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: white;
+  background-color: var(--register-background-color);
+  width: 100%;
+  padding: 16px 16px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 50px 0px #0408131a;
+}
+
+input::placeholder {
+  font-size: 14px !important;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  color: var(--placeholder-color);
+}

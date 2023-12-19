@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sign Up Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <section class="left">
+        <img src="./Assets/Logo.png" alt="Logo" class="logo" />
+        <h2 class="heading">For Individuals</h2>
+        <p class="desktop">
+          Start benefiting from the wellness experience. For companies looking
+          on increasing productivity, and improving organization wellness.
+        </p>
+        <p class="mobile">
+          Inspiring wholesome harmony for the mind, body and spirit, for
+          everyone, everywhere.
+        </p>
+      </section>
+      <section class="right">
+        <form action="">
+          <div class="input-container">
+            <div class="input-line">
+              <label for="fname">First Name</label>
+              <input type="text" name="fname" id="fname" placeholder="Jane" />
+            </div>
+            <div class="input-line">
+              <label for="lname">Last Name</label>
+              <input type="text" name="lname" id="lname" placeholder="Doe" />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-line">
+              <label for="gender">Gender</label>
+              <select name="gender" id="gender">
+                <option value="disabled selected hidden">Select here</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="confused">LGBTQIA++</option>
+              </select>
+            </div>
+            <div class="input-line">
+              <label for="dob">Date of Birth</label>
+              <input
+                type="date"
+                name="dob"
+                id="dob"
+                placeholder="Select here"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-line">
+              <label for="weight">Weight (KG)</label>
+              <input
+                type="text"
+                name="weight"
+                id="weight"
+                placeholder="Enter Weight"
+              />
+            </div>
+            <div class="input-line">
+              <label for="height">Height (CM)</label>
+              <input
+                type="text"
+                name="height"
+                id="height"
+                placeholder="Enter height here.."
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-line">
+              <label for="activity">Activity Level</label>
+              <input
+                type="text"
+                name="weight"
+                id="weight"
+                placeholder="Select here"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-line">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-line">
+              <input type="submit" value="Register" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
