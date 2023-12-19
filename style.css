@@ -13,6 +13,13 @@
 @font-face {
   font-family: SofiaPro;
   src: url(./Assets/font/SofiaProSemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SofiaPro;
+  src: url(./Assets/font/SofiaProMedium.ttf);
+  font-weight: 500;
 }
 
 * {
@@ -105,7 +112,7 @@ section.right {
   width: 100%;
 }
 
-label{
+label {
   font-family: SofiaPro, inter, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -150,6 +157,26 @@ input::placeholder {
   color: var(--placeholder-color);
 }
 
+div.legal{
+  display: flex;
+  justify-content: center;
+}
+
+p.legal{
+  font-family: SofiaPro, inter, helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+p a{
+  font-family: SofiaPro, inter, helvetica, sans-serif;
+  text-decoration: underline #2ec4b6;
+  color: #2ec4b6;
+  font-weight: 500;
+}
+
+
+/* Media query for mobile */
 @media only screen and (max-width: 500px) {
   .main-container {
     flex-direction: column;
@@ -158,31 +185,31 @@ input::placeholder {
     margin: 0;
   }
 
-  .logo{
+  .logo {
     width: 38.67px;
   }
 
-  .heading{
+  .heading {
     font-size: 30px;
     line-height: 29.4px;
     letter-spacing: -0.8px;
   }
 
-  .desktop{
+  .desktop {
     display: hidden;
   }
 
-  .mobile{
+  .mobile {
     font-weight: 300;
     font-size: 16px;
     line-height: 25px;
-    color: var(--placeholder-color)
+    color: var(--placeholder-color);
   }
 
   section.left {
     width: 100%;
   }
-  
+
   section.right {
     width: 100%;
     background-color: white;
@@ -197,7 +224,7 @@ input::placeholder {
     gap: 0;
   }
 
-  .input-line{
+  .input-line {
     margin-bottom: 24px;
   }
 }
