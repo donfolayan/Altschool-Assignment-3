@@ -175,6 +175,10 @@ p a{
   font-weight: 500;
 }
 
+.legal.hidden-desktop{
+  display: none;
+}
+
 
 /* Media query for mobile */
 @media only screen and (max-width: 500px) {
@@ -227,4 +231,16 @@ p a{
   .input-line {
     margin-bottom: 24px;
   }
+
+  .legal.hidden-desktop{
+    display: flex;
+    text-align: center;
+    padding: 0 30px;
+    padding-bottom: 64px;
+  }
+
+  .legal.hidden-mobile{
+    display: none;
+  }
+
 }
